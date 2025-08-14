@@ -1,0 +1,26 @@
+//seacrhing for character and returning true or false
+public class linearsearchex {
+    public static void main(String[] args) {
+        String n ="ritik";
+        char target ='k';
+        System.out.println(ls(n,target));
+
+
+    }
+    static boolean ls(String str ,char target){
+        if (str.length() == 0){
+            return false;
+
+        }
+        for (int i = 0; i < str.length(); i++) {
+            if( target == str.charAt(i)){
+                return true;
+
+            }
+
+        }
+        return false;
+
+
+    }
+}
